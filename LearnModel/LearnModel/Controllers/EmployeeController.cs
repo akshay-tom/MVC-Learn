@@ -12,6 +12,10 @@ namespace LearnModel.Controllers
         // GET: Employee
         public ActionResult Index()
         {
+            ViewBag.justtry = "ViewBag Try";
+
+            ViewData["justtry1"] = "ViewData Example";
+
             Employee emp = new Employee()
             {
                 EmployeeID = 141,
