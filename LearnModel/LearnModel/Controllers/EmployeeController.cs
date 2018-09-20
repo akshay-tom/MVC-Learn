@@ -19,7 +19,7 @@ namespace LearnModel.Controllers
                 Gender = 'M',
                 City = "Bangalore"
             };
-            return View();
+            return View(emp);
         }
     }
 }

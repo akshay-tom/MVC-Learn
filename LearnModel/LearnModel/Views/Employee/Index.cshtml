@@ -1,13 +1,31 @@
 ﻿ @model LearnModel.Models.Employee
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Employee Details";
 }
 
-<h2>Index</h2>
+<h2>Employee</h2>
 
-<!--
-@using (Html.BeginForm()) 
+<table class="table-striped">
+    <tr>
+        <td>Employee Id</td>
+        <td>@Model.EmployeeID</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>@Model.Gender</td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td>@Model.City</td>
+    </tr>
+</table>
+
+@*@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
@@ -53,4 +71,4 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
-}--
+}*@
