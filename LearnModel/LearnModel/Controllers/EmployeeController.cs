@@ -14,7 +14,7 @@ namespace LearnModel.Controllers
         {
             ViewBag.justtry = "ViewBag Try";
 
-            ViewData["justtry1"] = "ViewData Example";
+            ViewData["justtry"] = "ViewData Example";
 
             Employee emp = new Employee()
             {
